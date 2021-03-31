@@ -1,4 +1,4 @@
-# Routing-tables statistics exporter
+# Vlan L2 counters exporter for Cisco Nexus switches
 Prometheus exporter of vlan L2 counters for NXOS devices.
 Netconf ssh service on standart port(830) must be enabled on target device.
 
