@@ -3,6 +3,7 @@ FROM python:3.7.7-alpine3.11
 WORKDIR /opt/app
 
 ENV FLASK_APP="nxos-vlan-stat-exporter.py"
+ENV CRYPTOGRAPHY_DONT_BUILD_RUST=1
 
 COPY requirements.txt ./
 RUN apk add build-base libffi-dev openssl-dev libxml2-dev libxslt-dev \
